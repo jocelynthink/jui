@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="root" class="container">
+		<div class="m-artical-action">
+			<div class="artical-action-mid" id="action_mid"></div>
+		</div>
+		<div class="top-nav" id="top_nav" style="display: none;">
+			<div class="icon-back"></div>
+			<div class="nav-title">返回目录</div>
+		</div>
+		<div id="fiction_chapter_title"></div>
+		<div id="fiction_container" class="m-read-content">
+			
+		</div>
+		<div class="m-button-bar">
+			<ul id="bottom_tool_bar_ul" class="u-tab">
+				<li class="prev_button" id="prev">上一章</li>
+				<li class="next_button" id="next">下一章</li>
+			</ul>
+		</div>
+		<div class="bottom-nav bottom_nav" style="display:none">
+			<div class="dir-container">
+				<div class="directory"></div>
+				<p>目录</p>
+			</div>
+			<div class="font-button" id="font_button">
+				<div class="font"></div>
+				<p>字体</p>
+			</div>
+			<div class="day-night" id="night_button">
+				<div class="day-container">
+					<div class="day" id="day_icon"></div>
+					<p id="day_text">日间</p>
+				</div>
+				<!-- <div class="day-container">
+					<div class="day"></div><div class="dayp"></div>
+					<p>夜间</p>
+				</div> -->
+			</div>
+		</div>
+
+		<div class="nav-pannel-bk nav-pannel-container" style="display:none"></div>
+		<div class="nav-pannel nav-pannel-container" style="display:none">
+        	<div class="child-mod">
+        		<span>字号</span>
+        		<button id="large_font" class="font-size-button">大</button>
+        		<button id="small_font" class="font-size-button">小</button>
+        	</div>
+        	<div id="bg_container" class="child-mod">
+	        	<span>背景</span>
+	        	<div class="bk-container">
+	        		<div class="bk-container-current" style="display:none"></div>
+	        	</div>
+	        	<div class="bk-container" >
+	        		<div class="bk-container-current" style="display:none" id="color_day"></div>
+	        	</div>
+	        	<div class="bk-container">
+	        		<div class="bk-container-current" style="display:none"></div>
+	        	</div>
+	        	<div class="bk-container">
+	        		<div class="bk-container-current" style="display:none"></div>
+	        	</div>
+	        	<div class="bk-container" >
+	        		<div class="bk-container-current" style="display:none" id="color_night"></div>
+	        	</div>
+        	</div>
+		</div>   
+	</div>
+	<span></span>
+			    	
+
+	<script src="lib/zepto.min.js"></script>
+	<script type="text/javascript">
+		window.jQuery = $;
+	</script>
+	<script src="js/jquery.base64.js"></script>
+	<script src="js/jquery.jsonp.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
