@@ -1,4 +1,3 @@
-
 /* 基本图文组件对象 */
 
 var H5ComponentBase = function( name, cfg ){
@@ -23,8 +22,10 @@ var H5ComponentBase = function( name, cfg ){
 	// ... 很多自定义的参数
 	console.log(cls + '_load');
 	component.on('onLoad',function(){
-		component.addClass(cls+'_load').removeClass(cls + '_leave');
-		cfg.animateIn && component.animate(cfg.animateIn);
+		setTimeout(function(){
+			component.addClass(cls+'_load').removeClass(cls + '_leave');
+			cfg.animateIn && component.animate(cfg.animateIn);
+		},cfg.delay || 500);
 		return false;
 	});
 	component.on('onLeave',function(){
@@ -34,4 +35,5 @@ var H5ComponentBase = function( name, cfg ){
 	})
 	return component;
 }
+
  

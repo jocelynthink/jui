@@ -1,0 +1,24 @@
+.h5_component_pie {
+	position: absolute;
+}
+
+.h5_component_pie canvas{
+	position: absolute;
+	left: 0;
+	top: 0; /*用canvas做动画，需要用到绝对定位*/
+	width: 100%;
+	height: 100%;
+	/*background-color: #ccc;*/
+}
+
+.h5_component_pie .text{
+	position: absolute;
+	font-size: 12px;
+	text-align: center;
+	bottom: -20px;
+	height: 20px;
+	line-height: 20px;
+	transform: scale(.8);
+	z-index: 99;
+	-webkit-transition: all 1s;
+}
