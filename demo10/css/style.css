@@ -1,0 +1,32 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+.main {
+	width: 100%;
+	min-height: 100%;
+	padding-top: 50px;
+	background: url(../img/xingkong.jpeg) no-repeat center center;
+	background-size: cover;
+}
+.main-header {
+	color: #fff;
+}
+.navbar {
+	background: transparent;
+}
+
+.danmu {
+	position: relative;	
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	background: #000;
+}
+.danmu-text {
+	position: absolute;
+	display: inline-block;
+}
+

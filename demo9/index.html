@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jocelynthink a Personal Portfolio Zipline</title>
   <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/my.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -19,23 +20,23 @@
 
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top nav-top" id="nav" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" type="button">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">KaijunHuang</a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#archive">archive</a></li>
+        <ul class="nav navbar-nav navbar-right text-uppercase nav-ul">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#about">About</a></li>
         </ul>
@@ -47,35 +48,128 @@
   <!-- home section -->
   <section class="home" id="home">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="jumbotron">
-            <h1>Jocelyn, think</h1>
-            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <p><a class="btn btn-primary btn-lg" href="#">Learn More</a></p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="home-left">
-            
-            <img class="home-left-img1" src="img/home1.png" alt="">
-            <!-- <img class="home-left-img2" src="img/home2.png" alt=""> -->
-          </div>
-
-        </div>
+      <div class="jumbotron">
+        <h1>Jocelyn, think</h1>
+        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <ul class="list-inline">
+          <li><a class="btn btn-primary btn-lg home-btn" href="#"><i class="fa fa-github fa-fw"></i> GitHub</a></li>
+          <li><a class="btn btn-primary btn-lg home-btn" href="#"><i class="fa fa-weibo fa-fw"></i> Weibo</a></li>
+          <li><a class="btn btn-primary btn-lg home-btn" href="#"><i class="fa fa-weibo fa-fw"></i> Aritive</a></li>
+          <li><a class="btn btn-primary btn-lg home-btn" href="#"><i class="fa fa-linkedin fa-fw"></i> Linkedin</a></li>
+          <li><a class="btn btn-primary btn-lg home-btn" href="#"><i class="fa fa-fire fa-fw"></i> freeCodeCamp</a></li>
+        </ul>
       </div>
     </div>
   </section>
   <!-- about section -->
-  <section id="about"></section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-8">
+          <div class="text-info">
+            <h1>Jocelyn, think</h1>
+            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <!-- <p><a class="btn btn-primary btn-lg" href="#">Learn More</a></p> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <div class="about-left">
+            <img class="about-left-img1 img-circle img-responsive" src="img/me.jpg" alt="me">
+            <!-- <img class="home-left-img2" src="img/home2.png" alt=""> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- portfolio section-->
-  <section id="portfolio"></section>
-  <!-- contact section -->
-  <section id="contact"></section>
+  <section class="portfolio" id="portfolio">
+    <div class="container text-center">
+      <div class="profolio-top text-center">
+        <img src="img/title-top.png" alt="title-top">
+      </div>
+      <div class="portfolio-header text-center">
+        <h2>Awesomeness Portfolio</h2>
+        <h3>Below you'll find some of my recent work.</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <div class="portfolio-img">
+              <div class="portfolio-hover">
+              </div>
+              <img src="img/5.png" alt="5">
+              <caption class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </caption>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <div class="portfolio-img">
+              <div class="portfolio-hover"></div>
+              <img src="img/1.png" alt="1">
+              <caption class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </caption>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <div class="portfolio-img">
+              <div class="portfolio-hover"></div>
+              <img src="img/2.png" alt="2">
+              <caption class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </caption>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="thumbnail">
+            <div class="portfolio-img">
+              <div class="portfolio-hover"></div>
+              <img src="img/3.png" alt="3">
+              <caption class="caption">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              </caption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer 部分 -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <p> © 2017 JOCELYN, INC</p>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <ul class="list-inline pull-right">
+            <li><a href="#home">Home</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

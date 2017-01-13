@@ -1,0 +1,129 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+	/*font-family: sans-serif;*/
+}
+/****** nav section ******/
+.nav-top {
+	padding-top: 30px;
+	padding-bottom: 30px;	
+	letter-spacing: 2px;
+	background: transparent;
+	border: none;
+	transition: all ease .5s;
+}
+.nav-top .navbar-brand {
+	color: #fff;
+	font-size: 40px;
+}
+.nav-top .navbar-brand:hover { color: #fff; }
+.nav-top .nav-ul >li>a:hover { color: #fff; }
+.nav-top .nav-ul >li>a.active { color: #fff; }
+.nav-top .nav-ul >li>a.active.top { color: #000; }
+.nav-top .nav-ul >li>a.top { color: #888; }
+.nav-top .nav-ul >li>a.active:hover,
+.nav-top .nav-ul >li>a.top:hover{ color: #000; }
+/****** home setction ******/
+.home {
+	/*height: 100%;*/
+	min-height: 100%;
+	padding-top: 50px;
+	background:url(../img/bg-main.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+.jumbotron {
+	padding-top: 150px;
+	margin-bottom: 30px;	
+	letter-spacing: 2px;
+	color: #fff;
+	background:transparent;
+}
+.jumbotron h1 { font-weight: 300;	}
+.jumbotron p {
+	font-family: 'Playfair Display', serif;
+	font-style: italic;	
+	font-size: 30px;
+	letter-spacing: 2px;	
+	padding-bottom: 30px;
+}
+.home ul > li {
+	margin-bottom: 15px;
+}
+.home-btn {
+	padding: 9px 31px;
+	background: transparent;
+	border: solid 2px #fff;
+	border-radius: 50px;
+}
+.home-btn:hover {
+	color: #000;
+	background-color: #fff;
+	border: solid 2px #fff;
+}
+
+/****** about ******/
+.about {
+	/*height: 80%;*/
+	width: 100%;
+	background-color: #f2dede;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/******* portofilo section *******/
+.portfolio {
+	width: 100%;
+	/*height: 100%;*/
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.portfolio .thumbnail img {
+	width: 200px;
+	height: 200px;
+}
+.portfolio-header {
+	margin-bottom: 40px;
+}
+.thumbnail {
+	background: #eee;
+}
+.thumbnail:hover {
+	cursor: pointer;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.4);
+	transition: 0.5s;
+}
+.portfolio-img { position: relative; }
+.portfolio-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.1);
+	transition: all ease .5s;
+	opacity: 0;
+}
+.portfolio-hover:hover { opacity: 1; }
+
+/****** footer ******/
+footer {
+	padding: 20px 0;
+  background: #202020;
+  overflow: hidden;
+}
+footer p{
+  margin: 0;
+  margin-top: 3px;
+	color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+footer ul >li,
+footer ul>li>a { color: #fff; }
+footer ul>li>a:hover {
+	text-decoration: none;
+	color: #fff;
+}
