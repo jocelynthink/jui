@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function multiplyAll(arr) {
+  var product = 1;
+  // Only change code below this line
+  for (var i = 0; i < arr.length; i++){
+    var total = 0;
+    for (var j = 0; j < arr[i].length; j ++){
+      total += arr[i][j];
+    }
+    product *= total;
+  }
+  // Only change code above this line
+  return product;
+}
+
+// Modify values below to test your code
+multiplyAll([[1,2],[3,4],[5,6,7]]);
+
+
+//Setup
+var contacts = [
+    {
+        "firstName": "Akira",
+        "lastName": "Laine",
+        "number": "0543236543",
+        "likes": ["Pizza", "Coding", "Brownie Points"]
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "number": "0994372684",
+        "likes": ["Hogwarts", "Magic", "Hagrid"]
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "number": "0487345643",
+        "likes": ["Intriguing Cases", "Violin"]
+    },
+    {
+        "firstName": "Kristian",
+        "lastName": "Vos",
+        "number": "unknown",
+        "likes": ["Javascript", "Gaming", "Foxes"]
+    }
+];
+
+
+function lookUp(firstName, prop){
+// Only change code below this line
+  for (var i = 0, len = contacts.length; i < len; i++){
+    if (contacts[i].firstName == firstName) {
+      if (contacts[i][prop] !== void 0){
+        return contacts[i][prop];
+      }else {
+        return "No such property";
+      }
+    } 
+  }
+  return "No such contact";
+// Only change code above this line
+}
+
+// Change these values to test your function
+var result = lookUp("Kristian", "lastName");
+
+
+function palindrome(str) {
+  // Good luck!
+  var strOrignal = str;
+  var str1 = strOrignal.toLowerCase().replace(/[\W|_]/gi,"").split("").reverse().join("");
+  var str2 = strOrignal.toLowerCase().replace(/[\W|_]/gi,"");
+  return str1 === str2;
+}
+
+palindrome("0_0 (: /-\ :) 0-0")
+
+palindrome("eye");
+
+
+palindrome("race car");
+
+function titleCase(str) {
+  var result = str.split(" ");
+  var res = "";
+  for (var i = 0, len = result.length; i < len - 1; i++){
+    res += result[i][0].toUpperCase() + result[i].slice(1).toLowerCase() + " ";
+  }
+  res += result[i][0].toUpperCase() + result[i].slice(1).toLowerCase();
+  return res;
+}
+
+console.log(titleCase("I'm a little tea pot"));
+
+function truncate(str, num) {
+  // Clear out that junk in your trunk
+  var result = "";
+  if (num < 3){
+    result = str.slice(0,1) + "...";
+  }else {
+    result = str.slice(0,num);
+    result += "...";
+  }
+  return str;
+}
+
+truncate("A-tisket a-tasket A green and yellow basket", 11);
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  arr = arr.filter(function(value){
+    return value;
+  })
+  return arr;
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+function destroyer(arr) {
+  // Remove all the values
+  var that = arguments;
+  console.log(arguments);
+  arr = arr.filter(function(value){
+    for( var i = 1; i< that.length; i++){
+      if (value === that[i]){
+        return false;
+      }
+    }
+    return true;
+  });
+  return arr;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+
+
+function rot13(str) { // LBH QVQ VG!
+  var result = "";
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === " "){
+     result += " "; 
+    }else {
+      if (str[i].charCodeAt() - 13 < 65){
+              result += String.fromCharCode(str[i].charCodeAt() - 13 + 26); 
+
+      }else {
+              result += String.fromCharCode(str[i].charCodeAt() - 13); 
+
+      }
+    }
+  }
+  return result;
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
+
+	</script>
+</body>
+</html>
